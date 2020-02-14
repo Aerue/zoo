@@ -33,7 +33,7 @@
         /**
          * @return String
          */
-        public function noise()
+        public function noise() : String
         {
             return $this->getNoise();
         }

@@ -8,8 +8,9 @@
     ];
 
     foreach ($animals as $key => $value) {
+
         for ($i = 0; $i < $value; $i++) {
             $object = new $key($key . ($i + 1));
-            echo $object->getName() . ' ' . $object->noise() . ' ' ;
+            \App\Zoo::addAnimal($object);
         }
     }
